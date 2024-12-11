@@ -28,7 +28,7 @@ class LlavaDataset(Dataset):
     def build_dataset(self, data_dir:str) -> tuple[List, Path]:
         data_dir = Path(data_dir)
         chat_file = data_dir.joinpath("chat.json")
-        image_dir = data_dir.joinpath("images_dl")
+        image_dir = data_dir.joinpath("images-dl")
 
         chat_data = pd.read_json(chat_file).to_dict(orient="records")
 

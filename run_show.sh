@@ -13,7 +13,7 @@ deepspeed --include localhost:0 run_show.py \
     --dataloader_persistent_workers True \
     --output_dir output_model_user_lora_show_test01 \
     --num_train_epochs 10 \
-    --per_device_train_batch_size 4 \
+    --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 1 \
     --gradient_accumulation_steps 8 \
     --evaluation_strategy "no" \
